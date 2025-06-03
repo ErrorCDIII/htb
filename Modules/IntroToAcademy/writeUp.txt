@@ -1,0 +1,31 @@
+INTRODUCTION
+    Mark complete.
+
+THB ACADEMT STRUCTURE
+    Mark complete.
+
+MODULES
+    As seen in the image above, tier 0 modules reward 10 cubes.
+    10
+
+SECTIONS
+    Start the instance.
+    Open the terminal.
+    Type: cat /etc/issue. This will reveal the contents of the issue file.
+
+    Parrot Security 6.2 \n \l
+
+EXERCISES
+    Generate the ip:port.
+    Copy & paste it in your browser.
+
+    t4rg3ts
+
+PATHS AND CERTIFICATIONS
+    Mark complete.
+
+GETTING HELP
+    Mark complete.
+
+NEXT STEPS
+    Finish
