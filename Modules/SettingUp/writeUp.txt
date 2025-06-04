@@ -1,0 +1,90 @@
+INTROCUCTION
+
+INTRODUCTION
+    Mark complete.
+
+ORGANIZATION
+    Mark complete.
+
+VIRTUALIZATION
+
+VIRTUALIZATION
+    Mark complete.
+
+LINUX
+    Mark complete.
+
+WINDOWS
+    Mark complete.
+
+BACKUPS AND RECOVERY
+    Mark complete.
+
+VIRTUAL PRIVATE SERVERS 
+
+VPS PROVIDERS
+    Mark complete.
+
+VPS SETUP
+    Mark complete.
+
+SERVER MANAGEMENT
+    Mark complete.
+
+NETWORK SECURITY
+    Mark complete.
+
+VPS HARDENING
+    What does the acronym Linux PAM stand for?
+    Search online.
+    PAM stands for Pluggable Authentication Modules.
+    It is a framework that allows applications to use 
+        various authentication methods without hardcoding
+    The answer needs to be pluralized.
+    Pluggable Authentication Modules
+
+ENVIRONMENT
+
+THE TERMINAL EMULATOR
+    Mark complete.
+
+THE SHELL
+    Mark complete.
+
+THE MULTIPLEXER
+    Mark complete.
+
+THE CODE EDITOR
+    Mark complete.
+
+PRODUCTIVITY UTILITIES
+    Mark complete.
+
+REMOTE DESKTOP
+    Mark complete.
+
+CONTAINERS
+    Mark complete.
+
+ISOLATION & SANDBOXING
+    What is the name of the mechanism to isolate applications in a restricted environment?
+    sandboxing
+    Note: entrys like sandbox won't be accepted as correct.
+    ChatGPT definition: 
+        Sandboxing is a security method that runs a program in
+        a safe, limitied space called a sandbox.
+        This sandbox stops the program from accessing or changing
+        important parts of the computer.
+        It helps keep the system safe by preventing the program
+        from causing harm or stealing data.
+
+HTTP UTILITIES
+    Mark complete.
+
+AI/LLM
+
+SELF HOSTING AI
+    Mark complete.
+
+AI IN THE TERMINAL
+    Finish
