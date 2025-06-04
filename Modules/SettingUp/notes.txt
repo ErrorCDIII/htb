@@ -1,0 +1,44 @@
+It makes sense to organize hosts and servers based on their OS.
+
+Penetration.Testing
+    Pre-Engagement
+        ...
+    Linux
+        Information-Gathering
+            ...
+        Vulnerability-Assessment
+            ...
+        Exploitation
+            ...
+        Post-Exploitation  
+            ...
+        Lateral-Movement
+            ...
+    Windows
+        Information-Gathering
+            ...
+        ...
+    Reporting
+        ...
+    Results
+        ...
+
+Scripting Logs
+
+<date>-<start time>-<name>.log
+
+script 03-21-2021-0200pm-exploitation.log
+<commands>
+exit
+
+It is useful to have a Windows distro available.
+To do so, it is possible to download a copy of the Windws Developer VM.
+It comes pre-configured with a user IEUser and password Passw0rd!
+
+A container cannot be difined as a virtual machine.
+It is an isolated group of processes -running on a single host-
+that corresponds to a complete application, including
+it's configuration and dependencies.
+
+Sandboxing and isolation are security techniques that are used to restrict and control 
+the execution environment of applications.
