@@ -1,0 +1,34 @@
+Pentesing Basics
+
+Basic Tools
+
+Optional Exercises
+
+Apply what you learned in this section to grab the banner of the 
+above server and submit it as the answer.
+
+Target ip address and port:
+    83.136.249.246:47486
+
+Pinging ip address shows target is up.
+    ping 83.136.249.246
+
+Since we already know the port that's being used we can try to 
+enumerate with nmap with this command: 
+    nmap -sV 83.136.249.246 -p 47486
+
+We'll get the following:
+    PORT: 47486/tcp
+    STATE: open
+    SERVICE: ssh
+    VERSION: OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+    Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Note: the CPE (Common Platform Enumaretion) is a standard used
+to indentify OS's, applications and hardware.
+
+Since it's a ssh service we can try to use SSH:
+    ssh 83.136.249.246 -p 47486
+
+A prompt will appear to confirm connection attempt and a ssh key 
+and acess will be denied.
