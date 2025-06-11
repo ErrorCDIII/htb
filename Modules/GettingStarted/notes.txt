@@ -1,0 +1,204 @@
+
+INTRODUCTION
+
+Infosec Overview
+
+In a nutshell, infosec is the practice of protecting data from unauthorized access,
+changes, unlawful use, disruption, etc.
+
+CIA Triad
+C - confidentiality
+I - Integrity
+A - Availability (of data)
+
+Risk Management Process
+
+Data protection must focus on efficient yet effective policy implementation 
+without negatively affecting an organization's business operations and 
+productivity.
+
+To Achieve this, organizations must follow a process called risk management process.
+
+Steps                   Explanation  
+Identifying the Risk    Identifying the risks the business is exposed to, such
+                        as legal, environmental, market, regulatory, and other
+                        types of risks
+Analyze the Risk        Analyzing the risks to determine their impact and
+                        probability. The risks should be mapped to the organization's
+                        policies, procedures, and business processes
+Evaluate the Risk       Evaluating, ranking, and prioritizing risks. Then, the 
+                        organization must decide to accept (unavoidable),
+                        avoid (change plans), control (mitigate), or 
+                        transfer risk (insure)
+Dealing with Risk       Eliminating or containing the risks as best as possible.
+                        This is handled by interfacing directly with the 
+                        stakeholders for the system or process that the risk
+                        is associated with
+Monitoring Risk         All risks must be constantly monitored. Risks should be
+                        constantly monitored for any situational changes that
+                        could change their impact score
+
+SETUP
+
+Getting Started with a Pentest Distro
+
+ISO
+Optical Disc Image - a file that is essentially a CD-ROM that can be mounted 
+    within a hypervisor to build the VM
+
+OVA
+Open Virtual Appliance - a pre-built virtual appliance 
+
+Connecting Using VPN
+
+A Virtual Private Network allows us to connect to a private network and access
+hosts and resources as if we were directly connected to the target private network.
+
+Connecting to HTB VPN
+
+If we type ifconfig in a terminal we'll see a tun adapter
+
+Typing netstat -rn will show us the networks accessible via the VPN
+
+PENTESTING BASICS
+
+Common Terms
+
+Shell
+
+On a Linux system, a shell is a program that takes input from the user via the
+keyboard and passes these commands to the operating system to perform a specific
+function.
+
+Shell Connections
+
+Shell Type      Description
+Reverse Shell   Initiates a connection back to a "listener" on our attack box
+Bind Shell      "Binds" to a specific port on the target host and waits for a 
+                connection from out attack box
+Web Shell       Runs operating system commands via a web browser, tipically not
+                interactive or semi-interactive. It can also be used to run single
+                commands
+
+Ports
+
+Virtual points where network connections begin and end.
+Each port is assigned a number and many are standardized.
+
+There are two categories of ports: 
+    TCP - Transmission Control Protocol 
+    UDP - User Diagram Protocol
+
+TCP
+    Reliable and connection-based.
+    Data arrives in order and is checked for errors.
+    Used for websites, emails, file transfers...
+    Connection-oriented. A connection between the client and the server must be
+    established before the data is sent.
+    The server must be in a listening state awaiting requests from clients.
+
+UDP
+    Unreliable and connectionless.
+    No guarantee that data arrives or is in order.
+    Faster but less reliable.
+    Use for streaming, gaming, voice calls...
+    There is no "handshake".
+
+Web Server
+
+Is an application that runs on the back-end server, which handles all the HTTP 
+traffic from the client-side browser, routes it to the requests destination
+pages, and finally respondes to the client-side browser.
+
+OWASP TopTen
+
+Standardized list of the top 10 web application vulnerabilities.
+
+Category                    Description
+Broken Access Control       Restrictions are not appropriately implemented to 
+                            prevent users from accessing other user's accounts,
+                            viewing sensitive data, accessing unauthorized functionalities,
+                            modifying data, etc.
+Cryptography Failures       Failures related to cryptography which often lead to 
+                            sensitive data exposure or system compromise
+Injection                   User-supplied data is not validated, filtered, or
+                            sanitized by the application.
+Insecure Design             Happens when the application is not designed
+                            with security in mind
+Security Misconfiguration   Missing appropriate security hardening 
+                            across any part of the application stack,
+                            insecure default configurations, open
+                            cloud storage, verbose error messages
+                            which disclose too much information
+Vulnerable and Outdated     Using components (both client-side and
+Components                  server-side) that are vulnerable,
+                            unssuported, or out of date
+Identification and          Authentication-related attacks that
+Authentication Failures     target the user's identity, authentication
+                            and session management
+Software and Data           Relate to code and infrastucture that
+Integrity Failures          does not protect against integrity violations.
+                            Example: reliance upon plugins, libraries
+                            from untrusted sources.
+Security Logging and        To help detect, escalate, and respond
+Monitoring Failures         to active breaches.
+Server-Side Request         Occurs whenever a web application is
+Forgery                     fetching a remote resource without 
+                            validating the user-suplied URL
+
+Basic Tools
+
+Using SSH
+
+Secure Shell is a network protocol that runs on port 22 by default
+and provides users such as system administrators a secure way to
+access a computer remotely.
+
+Netcat
+
+Is an utility for interacting with TCP/UDP ports.
+Primarily used to connect to shells.
+
+Banner Grabbing
+Used to gather information about a service by connecting to it and 
+reading the initial response it sends.
+
+Service Scanning
+
+Web Enumeration
+
+Public Exploits
+
+Types of Shells
+
+Privilege Escalation
+
+GETTING STARTED WITH HACK THE BOX (HTB)
+
+Staring Out
+
+Navigating HTB
+
+ATTACKING YOUR FIRST BOX
+
+Nibbles - Enumeration
+
+Nibbles - Web Footprint
+
+Nibbles - Initial Foothold
+
+Nibbles - Privilege Escalation
+
+Nibbles - Alternate User Method - Metasploit
+
+PROBLEM SOLVING
+
+Common Pitfalls
+
+Getting Help
+
+WHAT'S NEXT?
+
+Next Steps
+
+Knowledge Check
