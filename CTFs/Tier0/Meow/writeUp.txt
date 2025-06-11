@@ -1,0 +1,58 @@
+1 - Connect to the machine's network.
+    I connected via OpenVPN.
+
+2 - Generate IP address
+
+Task 1 - What does the acronym VM stand for? 
+    Virtual Machine
+
+Task 2 - What tool do we use to interact with the operating system in order to issue commands via the command line, such as the one to start our VPN connection? It's also known as a console or shell. 
+    terminal
+
+Task 3 - What service do we use to form our VPN connection into HTB labs? 
+    Openvpn
+
+Task 4 - What tool do we use to test our connection to the target with an ICMP echo request? 
+    ping
+
+Task 5 - What is the name of the most common tool for finding open ports on a target? 
+    nmap
+
+Task 6 - What service do we identify on port 23/tcp during our scans? 
+    Use nmap to find which ports are open.
+
+    Open a terminal and input:
+        nmap 10.129.221.36
+        (this was the ip generated to me, you'll get a different one)
+    
+    The result will be:
+        PORT    STATE   SERVICE
+        23/tcp  open    telnet
+    
+    telnet is the name of the service.
+
+Task 7 - What username is able to log into the target over telnet with a blank password? 
+    By reading the hint once can guess it's refering to Linux's admin, generally called root.
+    That's the answer.
+
+Submit root flag
+    We already know the service being used by the open port is telnet.
+    
+    A quick search on Wikipedia shows:
+        "Telnet (sometimes stylized TELNET[1]) is a client-server application protocol that provides access to virtual terminals 
+        of remote systems on local area networks or the Internet.[2]"
+    
+    The next step is to attempt to use the telnet service (via terminal) to establish a connection.
+    Type in you terminal:
+        telnet 10.129.221.36
+        (Once again, this is the IP address generated for me, your's will be different)
+        
+    After achieving connection, since this is an introdutory box, I went for the manually brute force route.
+        admin does not allow to log in withou a password.
+        root allows logging in.
+        A simple ls allows to list the contents.
+        The results are flag.txt and a folder called snap.
+        The snap folder leads to several fodlers with several dead-ends.
+        The flag.txt file is the next viable approach.
+        Using the terminal command: cat flag.txt to see the file's contents in the terminal.
+        The flag: b40abdfe23665f766f9c61ecba8a4c19
