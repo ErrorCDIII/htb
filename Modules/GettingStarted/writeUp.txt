@@ -8,27 +8,24 @@ Apply what you learned in this section to grab the banner of the
 above server and submit it as the answer.
 
 Target ip address and port:
-    83.136.249.246:47486
+    94.237.48.12:37098
 
-Pinging ip address shows target is up.
-    ping 83.136.249.246
+Opening the PwnBox we can see a text file called my_credentials.txt so we're going to snoop.
+It's contents are:
+    Username: htb-ac-1941487
+    Password: ZO7SiYGE
 
-Since we already know the port that's being used we can try to 
-enumerate with nmap with this command: 
-    nmap -sV 83.136.249.246 -p 47486
+Let's start by pinging:
+    ping 94.237.48.12
 
-We'll get the following:
-    PORT: 47486/tcp
-    STATE: open
-    SERVICE: ssh
-    VERSION: OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
-    Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+Ping proves communication is taking place.
 
-Note: the CPE (Common Platform Enumaretion) is a standard used
-to indentify OS's, applications and hardware.
+Let's use nmap to test the port that was privided to us:
+    nmap -sV 94.237.48.12 -p 37098
 
-Since it's a ssh service we can try to use SSH:
-    ssh 83.136.249.246 -p 47486
+We have an open port for a ssh service.
 
-A prompt will appear to confirm connection attempt and a ssh key 
-and acess will be denied.
+We also got a banner that proves the OS is Linux
+    SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.1
+
+That's the answer to this exercise.
